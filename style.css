@@ -1,0 +1,591 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+body {
+  padding: 0%;
+  margin: 0%;
+  font-family: "Montserrat", sans-serif;
+}
+
+/* Appointment Navbar */
+.appointment-navbar {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+/* Main Navbar */
+.main-navbar {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.main-navbar ul {
+  display: flex;
+  justify-content: space-around;
+  gap: 20px;
+}
+
+/* Home */
+.home {
+  display: flex;
+  justify-content: space-around;
+  justify-content: center;
+}
+
+.appointment-button {
+  width: 200px;
+  height: 40px;
+  font-weight: bolder;
+  border-radius: 8px;
+  border: 0px;
+  background-color: lightseagreen;
+  color: white;
+}
+
+.facebook-logo {
+  font-size: 24px;
+}
+
+.linkedin-logo {
+  font-size: 24px;
+}
+
+.pinterest-logo {
+  font-size: 24px;
+}
+
+.twitter-logo {
+  font-size: 24px;
+}
+
+/* Hospital Features */
+.hospital-features-cards {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.qd-card {
+  border: 1px solid;
+  border-radius: 10px;
+  border-color: lightgrey;
+  text-align: center;
+  width: 300px;
+  padding: 20px;
+}
+
+.hs-card {
+  border: 1px solid;
+  border-radius: 10px;
+  border-color: lightgrey;
+  text-align: center;
+  width: 300px;
+  padding: 20px;
+}
+
+.emergency {
+  border: 1px solid;
+  border-radius: 10px;
+  border-color: lightgrey;
+  text-align: center;
+  width: 300px;
+  padding: 20px;
+}
+
+/* Who We Are */
+.who-we-are {
+  display: flex;
+  justify-content: space-around;
+  justify-content: center;
+}
+
+.timetable {
+  padding: 10px;
+  border: 1px solid;
+  border-color: lightseagreen;
+}
+
+.hospital-info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+}
+
+.dotted-line {
+  width: 180px;
+  border-top: 1px dotted black;
+  margin: 10px 0;
+}
+
+/* Departments */
+.departments-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.crutches-card {
+  width: 10%;
+  height: 20%;
+  border-radius: 10px;
+  border-color: lightgrey;
+  text-align: center;
+  padding: 20px;
+  background-color: lightskyblue;
+}
+
+.xray-card {
+  width: 10%;
+  height: 20%;
+  border-radius: 10px;
+  border-color: lightgrey;
+  text-align: center;
+  padding: 20px;
+  background-color: lightsalmon;
+}
+
+.pulmonary-card {
+  width: 10%;
+  height: 20%;
+  border-radius: 10px;
+  border-color: lightgrey;
+  text-align: center;
+  padding: 20px;
+  background-color: lightgreen;
+}
+
+.cardiology-card {
+  width: 10%;
+  height: 20%;
+  border-radius: 10px;
+  border-color: lightgrey;
+  text-align: center;
+  padding: 20px;
+  background-color: lightgoldenrodyellow;
+}
+
+.dental-care-card {
+  width: 10%;
+  height: 20%;
+  border-radius: 10px;
+  border-color: lightgrey;
+  text-align: center;
+  padding: 20px;
+  background-color: lightcyan;
+}
+
+.neurology-card {
+  width: 10%;
+  height: 20%;
+  border-radius: 10px;
+  border-color: lightgrey;
+  text-align: center;
+  padding: 20px;
+  background-color: lightgray;
+}
+
+/* Make an Appointment */
+.form {
+  display: flex;
+  justify-content: space-around;
+  justify-content: center;
+  gap: 50px;
+}
+
+.input-text {
+  width: 250px;
+  height: 25px;
+  padding: 5px;
+  border: 1px solid;
+  border-color: lightgrey;
+  border-radius: 8px;
+}
+
+.message-box {
+  width: 250px;
+  height: 25px;
+  padding: 5px;
+  border: 1px solid;
+  border-color: lightgrey;
+  border-radius: 8px;
+}
+
+/* Specialists */
+.specialists {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+/* Gallery */
+.photo-gallery {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+/* Before and after procedures */
+.bafore-after-procedures {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 400px;
+  background-image: url(./images/before-after-bg.jpg);
+}
+/* Testimonials */
+.testimonials {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+}
+
+.patient-card {
+  border: 1px solid;
+  border-radius: 10px;
+  border-color: lightgrey;
+  text-align: center;
+  width: 300px;
+  padding: 20px;
+}
+
+/* Additional Info */
+.additional-info-container {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+}
+
+.additional-info-column {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.experience-card {
+  border: 1px solid;
+  border-radius: 10px;
+  border-color: lightgrey;
+  text-align: center;
+  width: 300px;
+  padding: 20px;
+}
+
+.qd-card {
+  border: 1px solid;
+  border-radius: 10px;
+  border-color: lightgrey;
+  text-align: center;
+  width: 300px;
+  padding: 20px;
+}
+
+.happypatients-card {
+  border: 1px solid;
+  border-radius: 10px;
+  border-color: lightgrey;
+  text-align: center;
+  width: 300px;
+  padding: 20px;
+}
+
+.hospitalrooms-card {
+  border: 1px solid;
+  border-radius: 10px;
+  border-color: lightgrey;
+  text-align: center;
+  width: 300px;
+  padding: 20px;
+}
+
+/* Pricing */
+.pricing {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.price {
+  color: white;
+  background-color: lightseagreen;
+  text-align: center;
+  padding: 20px;
+}
+
+.pricing-card {
+  width: 300px;
+  height: 500px;
+}
+
+.contact-now {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-button {
+  width: 200px;
+  height: 40px;
+  font-weight: bolder;
+  border-radius: 8px;
+  border: 0px;
+  background-color: lightseagreen;
+  color: white;
+}
+
+/* Questions */
+.questions {
+  display: flex;
+  justify-content: center;
+}
+
+.questions-button {
+  width: 400px;
+  height: 40px;
+  font-weight: bolder;
+  border-radius: 8px;
+  border: 0px;
+  background-color: lightseagreen;
+  color: white;
+}
+
+/* Subscribe */
+.email-input {
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+}
+
+/* News */
+.news {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+}
+
+/* Social Media Hash Tags */
+.hash-tags {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+
+.truelife {
+  width: 200px;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: lightskyblue;
+  border-radius: 8px;
+}
+
+.newlifehos {
+  width: 200px;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: lightpink;
+  border-radius: 8px;
+}
+
+.babycare {
+  width: 200px;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: lightgreen;
+  border-radius: 8px;
+}
+
+.injurycare {
+  width: 200px;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: lightgrey;
+  border-radius: 8px;
+}
+
+/* Stay connected with us */
+.form {
+  display: flex;
+  justify-content: space-around;
+  justify-content: center;
+  gap: 50px;
+}
+
+.message {
+  width: 200px;
+  height: 40px;
+  font-weight: bolder;
+  border-radius: 8px;
+  border: 0px;
+  background-color: lightseagreen;
+  color: white;
+}
+
+/* Footer */
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.blank-line {
+  width: 180px;
+  border-top: 0px;
+  margin: 10px 0;
+}
+
+.copyright-section {
+  width: 100%;
+  height: 50px;
+  background-color: #fcf2f2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Mobile Devices */
+@media (max-width: 600px) {
+  .appointment-navbar {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .main-navbar {
+    display: block;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .main-navbar ul {
+    display: block;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .home {
+    display: block;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .hospital-features-cards {
+    flex-direction: column;
+  }
+
+  .hospital-info {
+    display: block;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .departments-container {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .crutches-card,
+  .xray-card,
+  .pulmonary-card,
+  .cardiology-card,
+  .dental-care-card,
+  .neurology-card {
+    width: 30%;
+  }
+
+  .form {
+    display: block;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .specialists {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .photo-gallery {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .testimonials {
+    flex-direction: column;
+  }
+
+  .additional-info-container {
+    flex-direction: column;
+  }
+
+  .additional-info-image {
+    width: 100%;
+  }
+
+  .pricing {
+    flex-direction: column;
+  }
+
+  .questions {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .questions-image {
+    width: 100%;
+  }
+
+  .questions-button {
+    width: 100%;
+  }
+
+  .news {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .hash-tags {
+    flex-direction: column;
+  }
+
+  .footer {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+}
