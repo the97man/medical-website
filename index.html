@@ -17,77 +17,89 @@
       href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
     />
+
+    <script src="script.js" defer></script>
   </head>
   <body>
     <!-- Header -->
-    <!-- Appointment Navbar -->
-    <div class="appointment-navbar">
-      <p>
-        <a href="#" style="text-decoration: none">info@nischinto.com</a>
-      </p>
-      <br />
-      <p><a href="#" style="text-decoration: none">+01 - 234 567 890</a></p>
-      <p><a href="#" style="text-decoration: none">Appointment</a></p>
-    </div>
+    <section>
+      <!-- Appointment Navbar -->
+      <div class="appointment-navbar">
+        <p>
+          <a href="#" style="text-decoration: none">info@nischinto.com</a>
+        </p>
+        <br />
+        <p><a href="#" style="text-decoration: none">+01 - 234 567 890</a></p>
+        <p><a href="#" style="text-decoration: none">Appointment</a></p>
+      </div>
 
-    <!-- Main Navbar -->
-    <div class="main-navbar">
-      <div>
-        <img style="width: 150px" src="./images/sitelogo.png" alt="sitelogo" />
-      </div>
-      <div>
-        <ul>
-          <h3><a href="#home" style="text-decoration: none">Home</a></h3>
-          <h3><a href="#about" style="text-decoration: none">About</a></h3>
-          <h3>
-            <a href="#departments" style="text-decoration: none">Departments</a>
-          </h3>
-          <h3><a href="#doctors" style="text-decoration: none">Doctors</a></h3>
-          <h3><a href="#gallery" style="text-decoration: none">Gallery</a></h3>
-          <h3><a href="#pricing" style="text-decoration: none">Pricing</a></h3>
-          <h3><a href="#pricing" style="text-decoration: none">Blog</a></h3>
-          <h3><a href="#contact" style="text-decoration: none">Contact</a></h3>
+      <!-- Main Navbar -->
+      <nav class="main-navbar">
+        <a href="#" class="navbar-brand">
+          <img class="site-logo" src="./images/sitelogo.png" alt="Website Logo"
+        /></a>
+        <button class="navbar-toggler" aria-label="Toggle navigation">
+          <img src="./images/hamburger-icon.svg" alt="" />
+        </button>
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item">
+            <a class="nav-link" href="#departments">Departments</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#doctors">Doctors</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#gallery">Gallery</a>
+          </li>
+          <li class="nav-item"><a class="nav-link" href="#blog">Blog</a></li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Contact</a>
+          </li>
         </ul>
-      </div>
-    </div>
+      </nav>
+    </section>
 
     <!-- Home -->
-    <div class="home">
-      <div>
-        <h1>
-          Take the best quality treatment for <br />
-          Crutches, Laboratory, Cardiology, Dentist, Neurology.
-        </h1>
+    <section id="home">
+      <div class="home">
+        <div>
+          <h1>
+            Take the best quality treatment for <br />
+            Crutches, Laboratory, Cardiology, Dentist, Neurology.
+          </h1>
 
-        <p style="font-size: 20px">
-          The art of medicine consists in amusing the patient while nature cures
-          the disease. <br />
-          Treatment without prevention is simply unsustainable.
-        </p>
+          <p style="font-size: 20px">
+            The art of medicine consists in amusing the patient while nature
+            cures the disease. <br />
+            Treatment without prevention is simply unsustainable.
+          </p>
 
-        <button class="appointment-button">Appointment</button>
-        <ul style="gap: 20px">
-          <a href="#facebook" class="facebook-logo"
-            ><i class="fab fa-facebook"></i
-          ></a>
-          <a href="#linkedin" class="linkedin-logo"
-            ><i class="fab fa-linkedin"></i
-          ></a>
-          <a href="#pinterest" class="pinterest-logo"
-            ><i class="fab fa-pinterest"></i
-          ></a>
-          <a href="#twitter" class="twitter-logo"
-            ><i class="fab fa-twitter"></i
-          ></a>
-        </ul>
+          <button class="appointment-button">Appointment</button>
+          <ul style="gap: 20px">
+            <a href="#facebook" class="facebook-logo"
+              ><i class="fab fa-facebook"></i
+            ></a>
+            <a href="#linkedin" class="linkedin-logo"
+              ><i class="fab fa-linkedin"></i
+            ></a>
+            <a href="#pinterest" class="pinterest-logo"
+              ><i class="fab fa-pinterest"></i
+            ></a>
+            <a href="#twitter" class="twitter-logo"
+              ><i class="fab fa-twitter"></i
+            ></a>
+          </ul>
+        </div>
+
+        <img
+          src="./images/female-doctor.png"
+          alt="female-doctor"
+          style="width: 200px; height: 260px"
+        />
       </div>
-
-      <img
-        src="./images/female-doctor.png"
-        alt="female-doctor"
-        style="width: 200px; height: 260px"
-      />
-    </div>
+    </section>
 
     <!-- Hospital Features -->
     <div class="hospital-features-cards">
@@ -128,193 +140,200 @@
     </div>
 
     <!-- Who We Are -->
-    <h1 style="text-align: center">Who We Are</h1>
-    <p style="text-align: center">
-      Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-      <br />
-      Lorem Ipsum the industry's standard dummy text.
-    </p>
-
-    <div class="hospital-info">
+    <section id="about">
       <div>
-        <h1>
-          A hospital is a health care institution <br />
-          providing patient treatment with <br />
-          specialized medical
-        </h1>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-          eiusmod tempor <br />
-          incidid unt labore et dolore magna aliqua. Ut enim ad minim veniam,
-          quis nostrud <br />
-          exercitation ullamc laboris nisi ut aliquip. Commodo consequat.
+        <h1 style="text-align: center">Who We Are</h1>
+        <p style="text-align: center">
+          Lorem Ipsum is simply dummy text of the printing and typesetting
+          industry.
+          <br />
+          Lorem Ipsum the industry's standard dummy text.
         </p>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-          eiusmod tempor <br />
-          incidid unt labore et dolore magna aliqua. Ut enim ad minim veniam,
-          quis nostrud <br />
-          exercitation ullamc laboris nisi ut aliquip. Commodo consequat. Sed do
-          eiusmod <br />
-          tempor incidid unt labore et dolore magna aliqua.
-        </p>
+      </div>
 
-        <div style="display: flex; gap: 20px">
-          <img
-            style="width: 15%; height: 15%"
-            src="./images/founderimage.png"
-            alt="David Ambrose"
-          />
-          <div>
-            <p
-              style="
-                font-size: larger;
-                font-weight: bolder;
-                color: lightseagreen;
-              "
-            >
-              David Ambrose
-            </p>
-            <p style="font-size: smaller">Founder & Director</p>
+      <div class="hospital-info">
+        <div>
+          <h1>
+            A hospital is a health care institution <br />
+            providing patient treatment with <br />
+            specialized medical
+          </h1>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+            eiusmod tempor <br />
+            incidid unt labore et dolore magna aliqua. Ut enim ad minim veniam,
+            quis nostrud <br />
+            exercitation ullamc laboris nisi ut aliquip. Commodo consequat.
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+            eiusmod tempor <br />
+            incidid unt labore et dolore magna aliqua. Ut enim ad minim veniam,
+            quis nostrud <br />
+            exercitation ullamc laboris nisi ut aliquip. Commodo consequat. Sed
+            do eiusmod <br />
+            tempor incidid unt labore et dolore magna aliqua.
+          </p>
+
+          <div style="display: flex; gap: 20px">
+            <img
+              style="width: 15%; height: 15%"
+              src="./images/founderimage.png"
+              alt="David Ambrose"
+            />
+            <div>
+              <p
+                style="
+                  font-size: larger;
+                  font-weight: bolder;
+                  color: lightseagreen;
+                "
+              >
+                David Ambrose
+              </p>
+              <p style="font-size: smaller">Founder & Director</p>
+            </div>
           </div>
         </div>
+        <div class="timetable">
+          <table>
+            <h2 style="color: lightseagreen">Weekly Timetable</h2>
+            <tr>
+              <td>Monday</td>
+              <td>8:00am – 7:00pm</td>
+            </tr>
+            <td><div class="dotted-line"></div></td>
+
+            <td><div class="dotted-line"></div></td>
+            <tr>
+              <td>Tuesday</td>
+              <td>9:00am – 6:00pm</td>
+            </tr>
+            <td><div class="dotted-line"></div></td>
+
+            <td><div class="dotted-line"></div></td>
+            <tr>
+              <td>Wednesday</td>
+              <td>8:00am – 7:00pm</td>
+            </tr>
+            <td><div class="dotted-line"></div></td>
+
+            <td><div class="dotted-line"></div></td>
+            <tr>
+              <td>Thursday</td>
+              <td>9:00am – 6:00pm</td>
+            </tr>
+            <td><div class="dotted-line"></div></td>
+
+            <td><div class="dotted-line"></div></td>
+            <tr>
+              <td>Friday</td>
+              <td>8:00am – 7:00pm</td>
+            </tr>
+            <td><div class="dotted-line"></div></td>
+
+            <td><div class="dotted-line"></div></td>
+            <tr>
+              <td>Saturday</td>
+              <td>9:00am – 6:00pm</td>
+            </tr>
+            <td><div class="dotted-line"></div></td>
+
+            <td><div class="dotted-line"></div></td>
+            <tr>
+              <td>Sunday</td>
+              <td>8:00am – 7:00pm</td>
+            </tr>
+            <td><div class="dotted-line"></div></td>
+
+            <td><div class="dotted-line"></div></td>
+
+            <tr>
+              <td style="display: flex; gap: 20px">
+                <img
+                  style="width: 30px; height: 30px; margin: 0px; padding: 0px"
+                  src="./images/phone.png"
+                  alt="Phone Icon"
+                />
+                <p style="margin: 0px; padding: 0px">
+                  Call Now <br />
+                  <span style="font-weight: bolder; color: lightseagreen"
+                    >(+01) - 234 567 890</span
+                  >
+                </p>
+              </td>
+            </tr>
+          </table>
+        </div>
       </div>
-      <div class="timetable">
-        <table>
-          <h2 style="color: lightseagreen">Weekly Timetable</h2>
-          <tr>
-            <td>Monday</td>
-            <td>8:00am – 7:00pm</td>
-          </tr>
-          <td><div class="dotted-line"></div></td>
-
-          <td><div class="dotted-line"></div></td>
-          <tr>
-            <td>Tuesday</td>
-            <td>9:00am – 6:00pm</td>
-          </tr>
-          <td><div class="dotted-line"></div></td>
-
-          <td><div class="dotted-line"></div></td>
-          <tr>
-            <td>Wednesday</td>
-            <td>8:00am – 7:00pm</td>
-          </tr>
-          <td><div class="dotted-line"></div></td>
-
-          <td><div class="dotted-line"></div></td>
-          <tr>
-            <td>Thursday</td>
-            <td>9:00am – 6:00pm</td>
-          </tr>
-          <td><div class="dotted-line"></div></td>
-
-          <td><div class="dotted-line"></div></td>
-          <tr>
-            <td>Friday</td>
-            <td>8:00am – 7:00pm</td>
-          </tr>
-          <td><div class="dotted-line"></div></td>
-
-          <td><div class="dotted-line"></div></td>
-          <tr>
-            <td>Saturday</td>
-            <td>9:00am – 6:00pm</td>
-          </tr>
-          <td><div class="dotted-line"></div></td>
-
-          <td><div class="dotted-line"></div></td>
-          <tr>
-            <td>Sunday</td>
-            <td>8:00am – 7:00pm</td>
-          </tr>
-          <td><div class="dotted-line"></div></td>
-
-          <td><div class="dotted-line"></div></td>
-
-          <tr>
-            <td style="display: flex; gap: 20px">
-              <img
-                style="width: 30px; height: 30px; margin: 0px; padding: 0px"
-                src="./images/phone.png"
-                alt="Phone Icon"
-              />
-              <p style="margin: 0px; padding: 0px">
-                Call Now <br />
-                <span style="font-weight: bolder; color: lightseagreen"
-                  >(+01) - 234 567 890</span
-                >
-              </p>
-            </td>
-          </tr>
-        </table>
-      </div>
-    </div>
+    </section>
 
     <!-- Departments -->
-    <div>
-      <h1 style="text-align: center">Our Departments</h1>
-      <p style="text-align: center">
-        Lorem Ipsum is simply dummy text of the printing and typesetting
-        industry. Lorem Ipsum the industry's standard dummy text.
-      </p>
-    </div>
-
-    <div class="departments-container">
-      <div class="crutches-card">
-        <img
-          style="margin: 0; padding: 0; width: 100%"
-          src="./images/crutcheslogo.png"
-          alt="crutcheslogo"
-        />
-        <h3 style="margin: 0; padding: 0">Crutches</h3>
+    <section id="departments">
+      <div>
+        <h1 style="text-align: center">Our Departments</h1>
+        <p style="text-align: center">
+          Lorem Ipsum is simply dummy text of the printing and typesetting
+          industry. Lorem Ipsum the industry's standard dummy text.
+        </p>
       </div>
 
-      <div class="xray-card">
-        <img
-          style="margin: 0; padding: 0; width: 100%"
-          src="./images/xraylogo.png"
-          alt="crutcheslogo"
-        />
-        <h3 style="margin: 0; padding: 0">X-Ray</h3>
-      </div>
+      <div class="departments-container">
+        <div class="crutches-card">
+          <img
+            style="margin: 0; padding: 0; width: 100%"
+            src="./images/crutcheslogo.png"
+            alt="crutcheslogo"
+          />
+          <h3 style="margin: 0; padding: 0">Crutches</h3>
+        </div>
 
-      <div class="pulmonary-card">
-        <img
-          style="margin: 0; padding: 0; width: 100%"
-          src="./images/pulmonarylogo.png"
-          alt="crutcheslogo"
-        />
-        <h3 style="margin: 0; padding: 0">Pulmonary</h3>
-      </div>
+        <div class="xray-card">
+          <img
+            style="margin: 0; padding: 0; width: 100%"
+            src="./images/xraylogo.png"
+            alt="crutcheslogo"
+          />
+          <h3 style="margin: 0; padding: 0">X-Ray</h3>
+        </div>
 
-      <div class="cardiology-card">
-        <img
-          style="margin: 0; padding: 0; width: 100%"
-          src="./images/cardiologylogo.png"
-          alt="crutcheslogo"
-        />
-        <h3 style="margin: 0; padding: 0">Cardiology</h3>
-      </div>
+        <div class="pulmonary-card">
+          <img
+            style="margin: 0; padding: 0; width: 100%"
+            src="./images/pulmonarylogo.png"
+            alt="crutcheslogo"
+          />
+          <h3 style="margin: 0; padding: 0">Pulmonary</h3>
+        </div>
 
-      <div class="dental-care-card">
-        <img
-          style="margin: 0; padding: 0; width: 100%"
-          src="./images/dentallogo.png"
-          alt="crutcheslogo"
-        />
-        <h3 style="margin: 0; padding: 0">Dental Care</h3>
-      </div>
+        <div class="cardiology-card">
+          <img
+            style="margin: 0; padding: 0; width: 100%"
+            src="./images/cardiologylogo.png"
+            alt="crutcheslogo"
+          />
+          <h3 style="margin: 0; padding: 0">Cardiology</h3>
+        </div>
 
-      <div class="neurology-card">
-        <img
-          style="margin: 0; padding: 0; width: 100%"
-          src="./images/neurologylogo.png"
-          alt="crutcheslogo"
-        />
-        <h3 style="margin: 0; padding: 0">Neurology</h3>
+        <div class="dental-care-card">
+          <img
+            style="margin: 0; padding: 0; width: 100%"
+            src="./images/dentallogo.png"
+            alt="crutcheslogo"
+          />
+          <h3 style="margin: 0; padding: 0">Dental Care</h3>
+        </div>
+
+        <div class="neurology-card">
+          <img
+            style="margin: 0; padding: 0; width: 100%"
+            src="./images/neurologylogo.png"
+            alt="crutcheslogo"
+          />
+          <h3 style="margin: 0; padding: 0">Neurology</h3>
+        </div>
       </div>
-    </div>
+    </section>
 
     <br />
 
@@ -386,88 +405,92 @@
     </div>
 
     <!-- Specialists -->
-    <div>
-      <h1 style="text-align: center">Meet our specialists</h1>
-      <p style="text-align: center">
-        Lorem Ipsum is simply dummy text of the printing and typesetting
-        industry. <br />
-        Lorem Ipsum the industry's standard dummy text.
-      </p>
-    </div>
-
-    <div class="specialists">
-      <div style="width: 240px">
-        <img src="./images/doctorbailey.jpg" alt="Dr. Bailey" />
-        <h3 style="text-align: center">Dr. Philip Bailey</h3>
-        <p style="text-align: center">Urology</p>
+    <section>
+      <div id="doctors">
+        <h1 style="text-align: center">Meet our specialists</h1>
+        <p style="text-align: center">
+          Lorem Ipsum is simply dummy text of the printing and typesetting
+          industry. <br />
+          Lorem Ipsum the industry's standard dummy text.
+        </p>
       </div>
 
-      <div style="width: 240px">
-        <img src="./images/doctorhasson.jpg" alt="Dr. Hasson" />
-        <h3 style="text-align: center">Dr. Vera Hasson</h3>
-        <p style="text-align: center">Cardiology</p>
-      </div>
+      <div class="specialists">
+        <div style="width: 240px">
+          <img src="./images/doctorbailey.jpg" alt="Dr. Bailey" />
+          <h3 style="text-align: center">Dr. Philip Bailey</h3>
+          <p style="text-align: center">Urology</p>
+        </div>
 
-      <div style="width: 240px">
-        <img src="./images/doctorhill.jpg" alt="Dr. Hill" />
-        <h3 style="text-align: center">Dr. Matthew Hill</h3>
-        <p style="text-align: center">Neurosurgery</p>
-      </div>
+        <div style="width: 240px">
+          <img src="./images/doctorhasson.jpg" alt="Dr. Hasson" />
+          <h3 style="text-align: center">Dr. Vera Hasson</h3>
+          <p style="text-align: center">Cardiology</p>
+        </div>
 
-      <div style="width: 240px">
-        <img src="./images/doctorhoff.jpg" alt="Dr. Hoff" />
-        <h3 style="text-align: center">Dr. Jeanette Hoff</h3>
-        <p style="text-align: center">Surgery</p>
+        <div style="width: 240px">
+          <img src="./images/doctorhill.jpg" alt="Dr. Hill" />
+          <h3 style="text-align: center">Dr. Matthew Hill</h3>
+          <p style="text-align: center">Neurosurgery</p>
+        </div>
+
+        <div style="width: 240px">
+          <img src="./images/doctorhoff.jpg" alt="Dr. Hoff" />
+          <h3 style="text-align: center">Dr. Jeanette Hoff</h3>
+          <p style="text-align: center">Surgery</p>
+        </div>
       </div>
-    </div>
+    </section>
 
     <!-- Gallery -->
-    <div>
-      <h1 style="text-align: center">View our gallery</h1>
-      <p style="text-align: center">
-        Lorem Ipsum is simply dummy text of the printing and typesetting
-        industry. <br />
-        Lorem Ipsum the industry's standard dummy text.
-      </p>
-    </div>
-
-    <div></div>
-
-    <div class="photo-gallery">
-      <div class="column">
-        <div class="photo">
-          <img src="images/gallerymotherandson.jpg" alt="" />
-        </div>
-
-        <div class="photo">
-          <img src="images/galleryfemaledentist.jpg" alt="" />
-        </div>
+    <section id="gallery">
+      <div>
+        <h1 style="text-align: center">View our gallery</h1>
+        <p style="text-align: center">
+          Lorem Ipsum is simply dummy text of the printing and typesetting
+          industry. <br />
+          Lorem Ipsum the industry's standard dummy text.
+        </p>
       </div>
 
-      <div class="column">
-        <div class="photo">
-          <img src="images/gallerysurgerypatient.jpg" alt="" />
+      <div></div>
+
+      <div class="photo-gallery">
+        <div class="column">
+          <div class="photo">
+            <img src="images/gallerymotherandson.jpg" alt="" />
+          </div>
+
+          <div class="photo">
+            <img src="images/galleryfemaledentist.jpg" alt="" />
+          </div>
         </div>
 
-        <div class="photo">
-          <img src="images/galleryxray.jpg" alt="" />
+        <div class="column">
+          <div class="photo">
+            <img src="images/gallerysurgerypatient.jpg" alt="" />
+          </div>
+
+          <div class="photo">
+            <img src="images/galleryxray.jpg" alt="" />
+          </div>
+
+          <div class="photo">
+            <img src="images/gallerymedicine.jpg" alt="" />
+          </div>
         </div>
 
-        <div class="photo">
-          <img src="images/gallerymedicine.jpg" alt="" />
+        <div class="column">
+          <div class="photo">
+            <img src="images/gallerymeetingdoctor.jpg" alt="" />
+          </div>
+
+          <div class="photo">
+            <img src="images/gallerymaledentist.jpg" alt="" />
+          </div>
         </div>
       </div>
-
-      <div class="column">
-        <div class="photo">
-          <img src="images/gallerymeetingdoctor.jpg" alt="" />
-        </div>
-
-        <div class="photo">
-          <img src="images/gallerymaledentist.jpg" alt="" />
-        </div>
-      </div>
-    </div>
+    </section>
 
     <!-- Before and after procedures -->
     <div class="bafore-after-procedures">
@@ -481,58 +504,59 @@
 
     <!-- Testimonials -->
     <div>
-      <h1 style="text-align: center">What do the patients say?</h1>
-      <p style="text-align: center">
-        Lorem Ipsum is simply dummy text of the printing and typesetting
-        industry. <br />
-        Lorem Ipsum the industry's standard dummy text.
-      </p>
-    </div>
-
-    <div class="testimonials">
-      <div class="patient-card">
-        <img
-          style="width: 100px"
-          src="./images/patientralph.png"
-          alt="Ralph Jones"
-        />
-        <h2>Ralph Jones</h2>
-        <p style="padding-inline: 30px; text-align: center">UX Designer</p>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor
-          deleniti laudantium sint voluptate! Aspernatur cumque odio corporis
-          corrupti voluptatibus necessitatibus!
+      <div>
+        <h1 style="text-align: center">What do the patients say?</h1>
+        <p style="text-align: center">
+          Lorem Ipsum is simply dummy text of the printing and typesetting
+          industry. <br />
+          Lorem Ipsum the industry's standard dummy text.
         </p>
       </div>
+      <div class="testimonials">
+        <div class="patient-card">
+          <img
+            style="width: 100px"
+            src="./images/patientralph.png"
+            alt="Ralph Jones"
+          />
+          <h2>Ralph Jones</h2>
+          <p style="padding-inline: 30px; text-align: center">UX Designer</p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor
+            deleniti laudantium sint voluptate! Aspernatur cumque odio corporis
+            corrupti voluptatibus necessitatibus!
+          </p>
+        </div>
 
-      <div class="patient-card">
-        <img
-          style="width: 100px"
-          src="./images/patientfrancis.png"
-          alt="Francis Jara"
-        />
-        <h2>Francis Jara</h2>
-        <p style="padding-inline: 30px; text-align: center">Biographer</p>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor
-          deleniti laudantium sint voluptate! Aspernatur cumque odio corporis
-          corrupti voluptatibus necessitatibus!
-        </p>
-      </div>
+        <div class="patient-card">
+          <img
+            style="width: 100px"
+            src="./images/patientfrancis.png"
+            alt="Francis Jara"
+          />
+          <h2>Francis Jara</h2>
+          <p style="padding-inline: 30px; text-align: center">Biographer</p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor
+            deleniti laudantium sint voluptate! Aspernatur cumque odio corporis
+            corrupti voluptatibus necessitatibus!
+          </p>
+        </div>
 
-      <div class="patient-card">
-        <img
-          style="width: 100px"
-          src="./images/patientdavid.png"
-          alt="David Baer"
-        />
-        <h2>David Baer</h2>
-        <p style="padding-inline: 30px; text-align: center">Executive</p>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor
-          deleniti laudantium sint voluptate! Aspernatur cumque odio corporis
-          corrupti voluptatibus necessitatibus!
-        </p>
+        <div class="patient-card">
+          <img
+            style="width: 100px"
+            src="./images/patientdavid.png"
+            alt="David Baer"
+          />
+          <h2>David Baer</h2>
+          <p style="padding-inline: 30px; text-align: center">Executive</p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor
+            deleniti laudantium sint voluptate! Aspernatur cumque odio corporis
+            corrupti voluptatibus necessitatibus!
+          </p>
+        </div>
       </div>
     </div>
 
@@ -612,213 +636,220 @@
     </div>
 
     <!-- Pricing -->
-    <div>
-      <h1 style="text-align: center">Show your pricing plans</h1>
-      <p style="text-align: center">
-        Lorem Ipsum is simply dummy text of the printing and typesetting
-        industry. <br />
-        Lorem Ipsum the industry's standard dummy text.
-      </p>
-    </div>
-
-    <div class="pricing">
+    <section id="pricing">
       <div>
-        <div class="pricing-card">
-          <h1 class="price">$39</h1>
-          <h3 style="text-align: center; padding: 20px">Blood Test</h3>
-          <p style="text-align: center">
-            <i class="fas fa-check">&nbsp;</i>First Description
-          </p>
+        <h1 style="text-align: center">Show your pricing plans</h1>
+        <p style="text-align: center">
+          Lorem Ipsum is simply dummy text of the printing and typesetting
+          industry. <br />
+          Lorem Ipsum the industry's standard dummy text.
+        </p>
+      </div>
 
-          <p style="text-align: center">
-            <i class="fas fa-check">&nbsp;</i>Second Description
-          </p>
+      <div class="pricing">
+        <div>
+          <div class="pricing-card">
+            <h1 class="price">$39</h1>
+            <h3 style="text-align: center; padding: 20px">Blood Test</h3>
+            <p style="text-align: center">
+              <i class="fas fa-check">&nbsp;</i>First Description
+            </p>
 
-          <p style="text-align: center">
-            <i class="fas fa-check">&nbsp;</i>Third Description
-          </p>
+            <p style="text-align: center">
+              <i class="fas fa-check">&nbsp;</i>Second Description
+            </p>
 
-          <p style="text-align: center">
-            <i class="fas fa-times">&nbsp;</i>Fourth Description
-          </p>
+            <p style="text-align: center">
+              <i class="fas fa-check">&nbsp;</i>Third Description
+            </p>
 
-          <p style="text-align: center">
-            <i class="fas fa-times">&nbsp;</i>Fifth Description
-          </p>
+            <p style="text-align: center">
+              <i class="fas fa-times">&nbsp;</i>Fourth Description
+            </p>
 
-          <div class="contact-now">
-            <button class="contact-button">Contact Now</button>
+            <p style="text-align: center">
+              <i class="fas fa-times">&nbsp;</i>Fifth Description
+            </p>
+
+            <div class="contact-now">
+              <button class="contact-button">Contact Now</button>
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <div class="pricing-card">
+            <h1 class="price">$150</h1>
+            <h3 style="text-align: center; padding: 20px">Hemogoblin Test</h3>
+            <p style="text-align: center">
+              <i class="fas fa-check">&nbsp;</i>First Description
+            </p>
+
+            <p style="text-align: center">
+              <i class="fas fa-check">&nbsp;</i>Second Description
+            </p>
+
+            <p style="text-align: center">
+              <i class="fas fa-check">&nbsp;</i>Third Description
+            </p>
+
+            <p style="text-align: center">
+              <i class="fas fa-check">&nbsp;</i>Fourth Description
+            </p>
+
+            <p style="text-align: center">
+              <i class="fas fa-times">&nbsp;</i>Fifth Description
+            </p>
+
+            <div class="contact-now">
+              <button class="contact-button">Contact Now</button>
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <div class="pricing-card">
+            <h1 class="price">$89</h1>
+            <h3 style="text-align: center; padding: 20px">Homocysteine</h3>
+            <p style="text-align: center">
+              <i class="fas fa-check">&nbsp;</i>First Description
+            </p>
+
+            <p style="text-align: center">
+              <i class="fas fa-check">&nbsp;</i>Second Description
+            </p>
+
+            <p style="text-align: center">
+              <i class="fas fa-check">&nbsp;</i>Third Description
+            </p>
+
+            <p style="text-align: center">
+              <i class="fas fa-check">&nbsp;</i>Fourth Description
+            </p>
+
+            <p style="text-align: center">
+              <i class="fas fa-check">&nbsp;</i>Fifth Description
+            </p>
+
+            <div class="contact-now">
+              <button class="contact-button">Contact Now</button>
+            </div>
           </div>
         </div>
       </div>
 
-      <div>
-        <div class="pricing-card">
-          <h1 class="price">$150</h1>
-          <h3 style="text-align: center; padding: 20px">Hemogoblin Test</h3>
-          <p style="text-align: center">
-            <i class="fas fa-check">&nbsp;</i>First Description
-          </p>
+      <!-- Questions -->
+      <div class="questions">
+        <div>
+          <img
+            class="questions-image"
+            src="./images/imagewithicons.png"
+            alt="Images With Icons"
+          />
+        </div>
 
-          <p style="text-align: center">
-            <i class="fas fa-check">&nbsp;</i>Second Description
-          </p>
-
-          <p style="text-align: center">
-            <i class="fas fa-check">&nbsp;</i>Third Description
-          </p>
-
-          <p style="text-align: center">
-            <i class="fas fa-check">&nbsp;</i>Fourth Description
-          </p>
-
-          <p style="text-align: center">
-            <i class="fas fa-times">&nbsp;</i>Fifth Description
-          </p>
-
-          <div class="contact-now">
-            <button class="contact-button">Contact Now</button>
-          </div>
+        <div style="display: flex; flex-direction: column; gap: 20px">
+          <h2>Just answer the questions</h2>
+          <button class="questions-button">What is Medi solution?</button>
+          <button class="questions-button">
+            How do I get a refill on my prescription?
+          </button>
+          <button class="questions-button">
+            How competent our total treatment?
+          </button>
+          <button class="questions-button">
+            If I get sick what should I do?
+          </button>
+          <button class="questions-button">
+            What is emergency cary to your hospital?
+          </button>
         </div>
       </div>
 
-      <div>
-        <div class="pricing-card">
-          <h1 class="price">$89</h1>
-          <h3 style="text-align: center; padding: 20px">Homocysteine</h3>
-          <p style="text-align: center">
-            <i class="fas fa-check">&nbsp;</i>First Description
-          </p>
+      <!-- Subscrible -->
+      <div
+        style="
+          height: 400px;
+          background-image: url(./images/subscribe-background.png);
+        "
+      >
+        <h1 style="text-align: center">Subscribe and stay updated</h1>
 
-          <p style="text-align: center">
-            <i class="fas fa-check">&nbsp;</i>Second Description
-          </p>
+        <p style="text-align: center">
+          Sign up to our newsletter and be the first to know about latest news,
+          <br />
+          special offers, events, and discounts.
+        </p>
 
-          <p style="text-align: center">
-            <i class="fas fa-check">&nbsp;</i>Third Description
-          </p>
-
-          <p style="text-align: center">
-            <i class="fas fa-check">&nbsp;</i>Fourth Description
-          </p>
-
-          <p style="text-align: center">
-            <i class="fas fa-check">&nbsp;</i>Fifth Description
-          </p>
-
-          <div class="contact-now">
-            <button class="contact-button">Contact Now</button>
-          </div>
+        <div class="email-input">
+          <input
+            class="input-text"
+            type="text"
+            placeholder="Enter Your E-Mail Address"
+          />
         </div>
+
+        <h2 style="text-align: center; color: lightseagreen">
+          (+01) - 234 567 890
+        </h2>
       </div>
-    </div>
-
-    <!-- Questions -->
-    <div class="questions">
-      <div>
-        <img
-          class="questions-image"
-          src="./images/imagewithicons.png"
-          alt="Images With Icons"
-        />
-      </div>
-
-      <div style="display: flex; flex-direction: column; gap: 20px">
-        <h2>Just answer the questions</h2>
-        <button class="questions-button">What is Medi solution?</button>
-        <button class="questions-button">
-          How do I get a refill on my prescription?
-        </button>
-        <button class="questions-button">
-          How competent our total treatment?
-        </button>
-        <button class="questions-button">
-          If I get sick what should I do?
-        </button>
-        <button class="questions-button">
-          What is emergency cary to your hospital?
-        </button>
-      </div>
-    </div>
-
-    <!-- Subscrible -->
-    <div
-      style="
-        height: 400px;
-        background-image: url(./images/subscribe-background.png);
-      "
-    >
-      <h1 style="text-align: center">Subscribe and stay updated</h1>
-
-      <p style="text-align: center">
-        Sign up to our newsletter and be the first to know about latest news,
-        <br />
-        special offers, events, and discounts.
-      </p>
-
-      <div class="email-input">
-        <input
-          class="input-text"
-          type="text"
-          placeholder="Enter Your E-Mail Address"
-        />
-      </div>
-
-      <h2 style="text-align: center; color: lightseagreen">
-        (+01) - 234 567 890
-      </h2>
-    </div>
+    </section>
 
     <!-- Latest News -->
-    <div>
-      <h1 style="text-align: center">Latest News</h1>
-      <p style="text-align: center">
-        Lorem Ipsum is simply dummy text of the printing and typesetting
-        industry. <br />
-        Lorem Ipsum the industry's standard dummy text
-      </p>
-    </div>
-
-    <div class="news">
+    <section id="blog">
       <div>
-        <img src="./images/newsdoctor.jpg" alt="Doctor" />
-        <h3 style="text-align: center">Working in emergency medicine</h3>
-        <p style="text-align: center; color: lightslategray">
-          Aug 21, 2020 Posted by: James Lewis
-        </p>
-        <p style="text-align: center; text-align: justify">
-          Lorem Ipsum is simply dummy text of the <br />
-          printing and typesetting industry. <br />
-          lorem Ipsum the industry's standard dummy text.
+        <h1 style="text-align: center">Latest News</h1>
+        <p style="text-align: center">
+          Lorem Ipsum is simply dummy text of the printing and typesetting
+          industry. <br />
+          Lorem Ipsum the industry's standard dummy text
         </p>
       </div>
 
-      <div>
-        <img src="./images/newsdoctorandpatient.jpg" alt="Doctor and Patient" />
-        <h3 style="text-align: center">Individual treatment & assistance</h3>
-        <p style="text-align: center; color: lightslategray">
-          Aug 22, 2020 Posted by: William Juarez
-        </p>
-        <p style="text-align: center; text-align: justify">
-          Lorem Ipsum is simply dummy text of the <br />
-          printing and typesetting industry. <br />
-          lorem Ipsum the industry's standard dummy text.
-        </p>
-      </div>
+      <div class="news">
+        <div>
+          <img src="./images/newsdoctor.jpg" alt="Doctor" />
+          <h3 style="text-align: center">Working in emergency medicine</h3>
+          <p style="text-align: center; color: lightslategray">
+            Aug 21, 2020 Posted by: James Lewis
+          </p>
+          <p style="text-align: center; text-align: justify">
+            Lorem Ipsum is simply dummy text of the <br />
+            printing and typesetting industry. <br />
+            lorem Ipsum the industry's standard dummy text.
+          </p>
+        </div>
 
-      <div>
-        <img src="./images/newsdoctorandchild.jpg" alt="Doctor and Child" />
-        <h3 style="text-align: center">Child’s first hospital visit</h3>
-        <p style="text-align: center; color: lightslategray">
-          Aug 23, 2020 Posted by: Albert Brian
-        </p>
-        <p style="text-align: center; text-align: justify">
-          Lorem Ipsum is simply dummy text of the <br />
-          printing and typesetting industry. <br />
-          lorem Ipsum the industry's standard dummy text.
-        </p>
+        <div>
+          <img
+            src="./images/newsdoctorandpatient.jpg"
+            alt="Doctor and Patient"
+          />
+          <h3 style="text-align: center">Individual treatment & assistance</h3>
+          <p style="text-align: center; color: lightslategray">
+            Aug 22, 2020 Posted by: William Juarez
+          </p>
+          <p style="text-align: center; text-align: justify">
+            Lorem Ipsum is simply dummy text of the <br />
+            printing and typesetting industry. <br />
+            lorem Ipsum the industry's standard dummy text.
+          </p>
+        </div>
+
+        <div>
+          <img src="./images/newsdoctorandchild.jpg" alt="Doctor and Child" />
+          <h3 style="text-align: center">Child’s first hospital visit</h3>
+          <p style="text-align: center; color: lightslategray">
+            Aug 23, 2020 Posted by: Albert Brian
+          </p>
+          <p style="text-align: center; text-align: justify">
+            Lorem Ipsum is simply dummy text of the <br />
+            printing and typesetting industry. <br />
+            lorem Ipsum the industry's standard dummy text.
+          </p>
+        </div>
       </div>
-    </div>
+    </section>
 
     <br />
     <br />
@@ -841,6 +872,10 @@
       <div class="injurycare">
         <img src="./images/injurycare.png" alt="Injured Foot" />
       </div>
+
+      <div class="ambusheba">
+        <img src="./images/ambusheba.png" alt="Ambulance" />
+      </div>
     </div>
 
     <br />
@@ -849,59 +884,68 @@
     <br />
 
     <!-- Stay connected with us -->
-    <div
-      style="height: 200px; background-image: url(./images/form-background.svg)"
-    >
-      <h1 style="text-align: center">Stay connected with us</h1>
-      <p style="text-align: center">
-        Lorem Ipsum is simply dummy text of the printing and typesetting
-        industry. <br />
-        Lorem Ipsum the industry's standard dummy text.
-      </p>
-    </div>
-
-    <form class="form" action="submit">
-      <div>
-        <div>
-          <label for="fullname">Full Name</label> <br />
-          <input class="input-text" type="text" placeholder="John Doe" />
-        </div>
-        <br />
-        <div>
-          <label for="subject">Subject</label> <br />
-          <input class="input-text" type="text" placeholder="Write subject" />
-        </div>
-        <br />
-        <div>
-          <label for="message">Message</label> <br />
-          <textarea
-            class="message-box"
-            name=""
-            id=""
-            placeholder="Write something here..."
-          ></textarea>
-        </div>
-        <br />
-        <button class="appointment-button">Send message</button>
+    <section id="contact">
+      <div
+        style="
+          height: 200px;
+          background-image: url(./images/form-background.svg);
+        "
+      >
+        <h1 style="text-align: center">Stay connected with us</h1>
+        <p style="text-align: center">
+          Lorem Ipsum is simply dummy text of the printing and typesetting
+          industry. <br />
+          Lorem Ipsum the industry's standard dummy text.
+        </p>
       </div>
 
-      <div>
+      <form class="form" action="submit">
         <div>
-          <label for="emailaddress">E-Mail Address</label> <br />
-          <input
-            class="input-text"
-            type="email"
-            placeholder="example@gmail.com"
-          />
+          <div>
+            <label for="fullname">Full Name</label> <br />
+            <input class="input-text" type="text" placeholder="John Doe" />
+          </div>
+          <br />
+          <div>
+            <label for="subject">Subject</label> <br />
+            <input class="input-text" type="text" placeholder="Write subject" />
+          </div>
+          <br />
+          <div>
+            <label for="message">Message</label> <br />
+            <textarea
+              class="message-box"
+              name=""
+              id=""
+              placeholder="Write something here..."
+            ></textarea>
+          </div>
+          <br />
+          <button class="appointment-button">Send message</button>
         </div>
-        <br />
+
         <div>
-          <label for="phonenumber">Phone</label> <br />
-          <input class="input-text" type="tel" placeholder="+123 456 789" />
+          <div>
+            <label for="emailaddress">E-Mail Address</label> <br />
+            <input
+              class="input-text"
+              type="email"
+              placeholder="example@gmail.com"
+            />
+          </div>
+          <br />
+          <div>
+            <label for="phonenumber">Phone</label> <br />
+            <input
+              class="input-text"
+              type="tel"
+              placeholder="(+01) - 234 567 890"
+            />
+          </div>
+          <br />
         </div>
-        <br />
-      </div>
-    </form>
+      </form>
+    </section>
 
     <br />
     <br />
@@ -909,117 +953,115 @@
     <br />
 
     <!-- Footer -->
-    <div class="footer">
+    <footer>
       <div class="footer-column-1">
-        <img src="./images/sitelogo.png" alt="" />
+        <img src="./images/sitelogo.png" alt="Site Logo" />
         <p>
-          Lorem ipsum dolor sit consectet <br />
-          adipisicing sed do eiusmod temp <br />
-          incididunt ut labore. Lorem <br />
-          Ipsum is simply dummy.
+          Lorem ipsum dolor sit consectet adipisicing sed do eiusmod temp
+          incididunt ut labore. Lorem Ipsum is simply dummy.
         </p>
         <ul style="gap: 20px">
-          <a href="#facebook" class="facebook-logo"
+          <a href="#facebook" class="social-logo"
             ><i class="fab fa-facebook"></i
           ></a>
-          <a href="#linkedin" class="linkedin-logo"
+          <a href="#linkedin" class="social-logo"
             ><i class="fab fa-linkedin"></i
           ></a>
-          <a href="#pinterest" class="pinterest-logo"
+          <a href="#pinterest" class="social-logo"
             ><i class="fab fa-pinterest"></i
           ></a>
-          <a href="#twitter" class="twitter-logo"
+          <a href="#twitter" class="social-logo"
             ><i class="fab fa-twitter"></i
           ></a>
         </ul>
       </div>
 
-      <table style="width: 300px">
-        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-        <tr>
-          <th style="text-align: left; color: lightseagreen">Useful Links</th>
-          <th style="text-align: left; color: lightseagreen">Departments</th>
-          <th style="text-align: left; color: lightseagreen">Contacts</th>
-        </tr>
+      <div class="footer-column-2">
+        <ul>
+          <li class="footer-heading">
+            <h3>Useful Links</h3>
+          </li>
+          <li class="footer-links-li">
+            <a href=""><i class="fas fa-chevron-right">&nbsp;&nbsp;</i>FAQs</a>
+          </li>
 
-        <td><div class="blank-line"></div></td>
+          <li class="footer-links-li">
+            <a href=""><i class="fas fa-chevron-right">&nbsp;&nbsp;</i>Blog</a>
+          </li>
 
-        <tr style="width: 50%">
-          <td style="text-align: left">
-            <a href="#FAQ" style="color: lightseagreen; text-decoration: none"
-              ><i class="fas fa-chevron-right">&nbsp;</i>FAQs</a
+          <li class="footer-links-li">
+            <a href=""
+              ><i class="fas fa-chevron-right">&nbsp;&nbsp;</i>Weekly
+              Timetable</a
             >
-          </td>
-          <td style="text-align: left">
-            <a href="#rehab" style="color: lightseagreen; text-decoration: none"
-              ><i class="fas fa-chevron-right">&nbsp;</i>Rehabilitation</a
-            >
-          </td>
-          <td style="text-align: left">
-            Address: 1223 Fulton Street San Diego CA 941-23 USA
-          </td>
-        </tr>
+          </li>
 
-        <td><div class="blank-line"></div></td>
+          <li class="footer-links-li">
+            <a href=""
+              ><i class="fas fa-chevron-right">&nbsp;&nbsp;</i>Terms &
+              Conditions</a
+            >
+          </li>
+        </ul>
+      </div>
 
-        <tr>
-          <td style="text-align: left">
-            <a href="#blog" style="color: lightseagreen; text-decoration: none"
-              ><i class="fas fa-chevron-right">&nbsp;</i>Blog</a
+      <div class="footer-column-3">
+        <ul>
+          <li class="footer-heading">
+            <h3>Departments</h3>
+          </li>
+          <li class="footer-links-li">
+            <a href=""
+              ><i class="fas fa-chevron-right">&nbsp;&nbsp;</i>Rehabilitation</a
             >
-          </td>
-          <td style="text-align: left">
-            <a
-              href="#labanalysis"
-              style="color: lightseagreen; text-decoration: none"
-              ><i class="fas fa-chevron-right">&nbsp;</i>Laboratory Analysis</a
-            >
-          </td>
-          <td style="text-align: left">Email: nischinto@gmail.com</td>
-        </tr>
+          </li>
 
-        <td><div class="blank-line"></div></td>
+          <li class="footer-links-li">
+            <a href=""
+              ><i class="fas fa-chevron-right">&nbsp;&nbsp;</i>Laboratory
+              Analysis</a
+            >
+          </li>
 
-        <tr>
-          <td style="text-align: left">
-            <a
-              href="#timetable"
-              style="color: lightseagreen; text-decoration: none"
-              ><i class="fas fa-chevron-right">&nbsp;</i>Weekly Timetable</a
+          <li class="footer-links-li">
+            <a href=""
+              ><i class="fas fa-chevron-right">&nbsp;&nbsp;</i>Face Lift
+              Surgery</a
             >
-          </td>
-          <td style="text-align: left">
-            <a
-              href="#facesurgery"
-              style="color: lightseagreen; text-decoration: none"
-              ><i class="fas fa-chevron-right">&nbsp;</i>Face Lift Surgery</a
-            >
-          </td>
-          <td style="text-align: left">
-            Phone: (+01) - 234 567 890 (+01) - 345 678 901
-          </td>
-        </tr>
+          </li>
 
-        <td><div class="blank-line"></div></td>
+          <li class="footer-links-li">
+            <a href=""
+              ><i class="fas fa-chevron-right">&nbsp;&nbsp;</i>Liposuction</a
+            >
+          </li>
+        </ul>
+      </div>
 
-        <tr>
-          <td style="text-align: left">
-            <a
-              href="#facesurgery"
-              style="color: lightseagreen; text-decoration: none"
-              ><i class="fas fa-chevron-right">&nbsp;</i>Terms and Conditions</a
-            >
-          </td>
-          <td style="text-align: left">
-            <a
-              href="#facesurgery"
-              style="color: lightseagreen; text-decoration: none"
-              ><i class="fas fa-chevron-right">&nbsp;</i>Liposuction</a
-            >
-          </td>
-        </tr>
-      </table>
-    </div>
+      <div class="footer-column-4">
+        <ul>
+          <li class="footer-heading">
+            <h3>Contacts</h3>
+          </li>
+
+          <li class="contacts-li">
+            <p>
+              <b>Address:</b> <br />
+              1223 Fulton Street San Diego CA 941-23 USA
+            </p>
+          </li>
+          <li class="contacts-li">
+            <p><b>Email:</b> nischinto@gmail.com</p>
+          </li>
+          <li class="contacts-li">
+            <p>
+              <b>Phone:</b> <br />
+              (+01) - 234 567 890 (+01) - 345 678 901
+            </p>
+          </li>
+        </ul>
+      </div>
+    </footer>
 
     <br />
     <br />
